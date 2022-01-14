@@ -38,11 +38,11 @@ const AdminCurrentCompanyDialog: React.FC<AdminCompanyProps> = (props) => {
         <DialogTitle id="alert-dialog-title">
           {"Please Select Company First."}
         </DialogTitle>
-        <DialogContent sx={{ display: "flex", justifyContent: "Center" }}>
+        <DialogContent sx={{ display: "flex-row", justifyContent: "Center" }}>
           {companies.map((item, index) => (
             <Card
               key={index}
-              sx={{ maxWidth: 260, m: 2, cursor: "pointer" }}
+              sx={{ width: "auto", m: 2, cursor: "pointer" }}
               elevation={3}
               onClick={() => {
                 setCurrentCompany(item.id);

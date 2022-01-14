@@ -141,7 +141,7 @@ const Attendances = () => {
   useEffect(() => {
     dispatch({ type: "FETCH_ATTENDANCE_REQUEST", currentCompany });
   }, []);
-  if (Object.keys(attendance[0]).length !== 0) {
+  if (attendance) {
     return (
       <Grid container>
         <Grid item xs={12} sx={{ mt: 3, mb: 3 }}>
